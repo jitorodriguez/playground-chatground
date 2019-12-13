@@ -1,0 +1,23 @@
+{
+  "name": "chat-playground",
+  "version": "1.0.0",
+  "description": "playground for chat related experiments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitorodriguez/playground-chatground.git"
+  },
+  "author": "jitorodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jitorodriguez/playground-chatground/issues"
+  },
+  "homepage": "https://github.com/jitorodriguez/playground-chatground#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
