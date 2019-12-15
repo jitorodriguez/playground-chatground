@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
-$('#send').click(function(){
-    var chatMessage = {
-        user: $('#user').val(),
-        message: $('#message').val()
-    };
+    $('#send').click(function(){
+        var chatMessage = {
+            user: $('#user').val(),
+            message: $('#message').val()
+        };
 
-    sendMesage(chatMessage);        
-});
+        sendMesage(chatMessage);        
+    });
 
 
-function sendMesage(messagePack)
-{
-    $.post("http://localhost:7000/messages", messagePack);
-}
+    function sendMesage(messagePack)
+    {
+        $.post("http://localhost:7000/messages", messagePack);
+    }
 
 });
