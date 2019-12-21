@@ -9,6 +9,10 @@ $(document).ready(function(){
         sendMesage(chatMessage);        
     });
 
+    socket.on('updatemessage', function (data) {
+        var htmlMessageBlock = '<p>[' + data.user + ']: ' + data.message + '</p>'; 
+        $('#message-container').append(htmlMessageBlock);
+    });
 
     function sendMesage(messagePack)
     {

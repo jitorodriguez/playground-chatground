@@ -8,16 +8,10 @@ app.use(bodyParser.urlencoded({ extended: true}));
 
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
-
-/*
-var server = app.listen(7000, () => {
-    console.log("server is running on port", server.address().port);
-});
-*/
  
 app.post('/messages', (req, res) => {
     var message = req.body;
-    console.log(message);
+    io.emit('updatemessage', message);
 });
 
 http.listen(7000, function(){

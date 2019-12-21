@@ -3,11 +3,11 @@
 <head>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/chat.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script>
   var socket = io();
 </script>
+<script type="text/javascript" src="javascript/chat.js"></script>
 </head>
 <body>
 <div class="container">
@@ -23,7 +23,7 @@
         <button id="send" class="btn btn-success">Send</button>
     </div>
 </div>
-<div class="message-container">
+<div id="message-container">
 </div>
 </body>
 </html>
