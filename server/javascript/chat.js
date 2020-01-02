@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     function sendMesage(messagePack)
     {
-        $.post("http://localhost:7000/messages", messagePack);
+        socket.emit('sendmessage', messagePack);
     }
 
 });
