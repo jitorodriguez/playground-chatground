@@ -1,0 +1,19 @@
+p.user{
+    margin: 0px;
+    font-weight: bold;
+    float:left; 
+}
+
+.jumbotron{
+    height: 10vh;
+}
+
+.messagecontainer{
+    height:60vh;
+    overflow-y: auto;
+}
+
+.page-footer{
+    padding-top: 10px;
+    background-color: #e9ecef;
+}
