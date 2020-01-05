@@ -12,6 +12,9 @@ $(document).ready(function(){
     socket.on('updatemessage', function (data) {
         var htmlMessageBlock = '<p class="user">[' + data.user + ']</p><p>: ' + data.message + '</p>';
         $('#message-container').append(htmlMessageBlock);
+        $('#message-container').stop(true, false).animate({
+            scrollTop: $('#message-container')[0].scrollHeight
+          }, 0);
     });
 
     function sendMesage(messagePack)

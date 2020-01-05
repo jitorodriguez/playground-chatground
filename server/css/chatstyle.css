@@ -4,16 +4,16 @@ p.user{
     float:left; 
 }
 
-.jumbotron{
-    height: 10vh;
-}
-
 .messagecontainer{
-    height:60vh;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 200px;
+    height: 80vh;
     overflow-y: auto;
 }
 
 .page-footer{
+    width: 100%;
     padding-top: 10px;
-    background-color: #e9ecef;
+    height: 200px;
+    background-color: #86bbf0;
 }
