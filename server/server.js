@@ -10,11 +10,12 @@ var http = require('http').createServer(app);
 var io = require('socket.io')(http);
  
 app.post('/messages', (req, res) => {
+    console.log('message sent through');
     var message = req.body;
     io.emit('updatemessage', message);
 });
 
-http.listen(7000, function(){
+http.listen(80, function(){
     console.log('I hear you :)');
 });
 

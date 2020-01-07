@@ -1,3 +1,6 @@
+var socket = io();
+socket.connect('');
+
 $(document).ready(function(){
 
     $('#send').click(function(){
