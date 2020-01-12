@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: true}));
 
-var http = require('http').createServer(app);
+var http = require('http').Server(app);
 var io = require('socket.io').listen(http);
  
 app.post('/messages', (req, res) => {
@@ -15,20 +15,16 @@ app.post('/messages', (req, res) => {
     io.emit('updatemessage', message);
 });
 
+http.listen(7000, function(){
+    console.log('server listening to %j', http.address());
+});
+
 io.on('connection', function(socket){
     console.log('a user connected');
 
     socket.on('sendmessage', (message) => {
         io.emit('updatemessage', message);
     });
-});
-
-http.listen({
-    host: 'localhost',
-    port: 80,
-    exclusive: true
-    }, function(){
-        console.log('server listening to %j', http.address());
 });
 
 

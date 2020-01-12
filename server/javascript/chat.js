@@ -1,5 +1,5 @@
 var socket = io();
-socket.connect('');
+socket.connect();
 
 $(document).ready(function(){
 
@@ -24,5 +24,4 @@ $(document).ready(function(){
     {
         socket.emit('sendmessage', messagePack);
     }
-
 });
