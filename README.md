@@ -1,7 +1,7 @@
 # playgorund-chatground
 
-Chatground playground to experiment with socket.io chat functionality. A simple chat that can interface between two or more people with a running chatlog. Basiccommands.
+Chatground playground to experiment with socket.io chat functionality. A simple chat that can interface between two or more people with a running chatlog.
 
-Integration with chat bot services will serve as a testing ground for chat-bot functionality. 
+Testing grounds for manipulating data sent to server ran chatbots and returning responses based on conditions. 
 
-The chat program will also read chats live from streamers channel and have the bot test functionality based on this log feed.
+Base framework set for leverage.
